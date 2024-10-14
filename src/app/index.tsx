@@ -11,33 +11,33 @@ const Index = (): JSX.Element => {
       </View>
       <View>
 
-        <View>
+        <View style={styles.noteListItem}>
           <View>
-            <Text>買い物リスト</Text>
-            <Text>2024年10月14日 10:16</Text>
+            <Text style={styles.noteListItemTitle}>買い物リスト</Text>
+            <Text style={styles.noteListItemDate}>2024年10月14日 10:16</Text>
           </View>
           <View>
-            <Text>x</Text>
-          </View>
-        </View>
-
-        <View>
-          <View>
-            <Text>買い物リスト</Text>
-            <Text>2024年10月14日 10:16</Text>
-          </View>
-          <View>
-            <Text>x</Text>
+            <Text>X</Text>
           </View>
         </View>
 
-        <View>
+        <View style={styles.noteListItem}>
           <View>
-            <Text>買い物リスト</Text>
-            <Text>2024年10月14日 10:16</Text>
+            <Text style={styles.noteListItemTitle}>買い物リスト</Text>
+            <Text style={styles.noteListItemDate}>2024年10月14日 10:16</Text>
           </View>
           <View>
-            <Text>x</Text>
+            <Text>X</Text>
+          </View>
+        </View>
+
+        <View style={styles.noteListItem}>
+          <View>
+            <Text style={styles.noteListItemTitle}>買い物リスト</Text>
+            <Text style={styles.noteListItemDate}>2024年10月14日 10:16</Text>
+          </View>
+          <View>
+            <Text>X</Text>
           </View>
         </View>
 
@@ -74,6 +74,25 @@ const styles = StyleSheet.create({
     lineHeight: 32,
     fontWeight: 'bold',
     color: '#ffffff'
+  },
+  noteListItem: {
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 16,
+    paddingHorizontal: 19,
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderColor: 'rgba(0, 0, 0, 0.15)'
+  },
+  noteListItemTitle: {
+    fontSize: 16,
+    lineHeight: 32
+  },
+  noteListItemDate: {
+    fontSize: 12,
+    lineHeight: 16,
+    color: '#848484'
   }
 })
 
